@@ -1,8 +1,13 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { ApolloProvider } from '@apollo/client'
 import { ChakraProvider } from '@chakra-ui/react'
 
+import { useApollo } from '../config/apollo'
+
 function App({ Component, pageProps }: AppProps) {
+  const client = useApollo(pageProps.initialApolloState)
+
   return (
     <>
       <Head>
@@ -17,9 +22,11 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
 
-      <ChakraProvider>
-        <Component {...pageProps} />
-      </ChakraProvider>
+      <ApolloProvider client={client}>
+        <ChakraProvider>
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </ApolloProvider>
     </>
   )
 }
