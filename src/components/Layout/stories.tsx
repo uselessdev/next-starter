@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react'
-import { GridProps, Text } from '@chakra-ui/core'
+import { GridProps, Text } from '@chakra-ui/react'
 import { Layout } from './index'
 
 export default {

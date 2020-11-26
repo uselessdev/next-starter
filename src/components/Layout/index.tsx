@@ -1,4 +1,4 @@
-import { Grid, GridProps } from '@chakra-ui/core'
+import { Grid, GridProps } from '@chakra-ui/react'
 
 export function Layout({ children, ...props }: GridProps) {
   return (
