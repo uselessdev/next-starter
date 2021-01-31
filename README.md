@@ -8,7 +8,7 @@ This is a simple and opinated nextjs starter that includes, [chakra-ui](https://
 TO start with this template you can follow the steps below:
 
 ```bash
-yarn create next-app my-app -e https://github.com/uselessdev/next-starter.git
+yarn create next-app my-app -e https://github.com/uselessdev/next-starter
 cd my-app
 yarn
 yarn dev # you can now access http://localhost:3000
