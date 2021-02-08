@@ -20,7 +20,7 @@
   "dependencies": {
     "@apollo/client": "^3.3.8",
     "@chakra-ui/react": "^1.0.3",
-    "@emotion/react": "^11.1.4",
+    "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "framer-motion": "^2.9.5",
     "graphql": "^15.5.0",
